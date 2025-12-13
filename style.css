@@ -1,0 +1,101 @@
+
+@font-face {
+  font-family: 'MagicFlower';
+  src: url('MagicFlower.ttf');
+}
+
+body {
+  margin: 0;
+  background: #f5f0e6;
+  font-family: 'MagicFlower', cursive;
+  overflow-y: auto;
+}
+
+.card {
+  background: #fff7e6;
+  width: 90%;
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea, select {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d8cfc4;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'MagicFlower', cursive;
+  font-size: 18px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #e6d8ad;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d6c89a;
+}
+
+#messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.message {
+  background: #fdf3d7;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 14px;
+  animation: slideUp 0.6s ease;
+}
+
+.sender {
+  font-size: 14px;
+  color: #7a6a4a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Falling daisies */
+.daisy {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh) rotate(360deg);
+  }
+}

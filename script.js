@@ -1,14 +1,15 @@
 // ------------------------
-// 1️⃣ Firebase Initialization
+// 1️⃣ Firebase Initialization (Compat Version)
 // ------------------------
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD7qg7d4o6JRR5JYPtaVEampNJnEWzuNt4",
+  authDomain: "iyah-78fdb.firebaseapp.com",
+  databaseURL: "https://iyah-78fdb-default-rtdb.firebaseio.com",
+  projectId: "iyah-78fdb",
+  storageBucket: "iyah-78fdb.firebasestorage.app",
+  messagingSenderId: "571576703138",
+  appId: "1:571576703138:web:5795831374578d7b165ffb",
+  measurementId: "G-JS1J6GSCGM"
 };
 
 // Initialize Firebase
@@ -48,7 +49,7 @@ database.ref("messages").on("child_added", (snapshot) => {
   // Show newest messages on top
   messagesDiv.prepend(msgDiv);
 
-  // Auto-scroll to the newest message
+  // Auto-scroll to newest message
   messagesDiv.scrollTo({
     top: 0,
     behavior: "smooth"
